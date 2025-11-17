@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t java_simple_app:latest .'
+                sh 'docker build -t bootjsp:latest .'
             }
         }
         stage('Run Container') {
