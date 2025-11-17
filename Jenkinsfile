@@ -20,7 +20,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f bootjsp || true
-                docker run -d --name bootjsp -p 9090:9090 bootjsp:latest
+                docker run -d --name jay -p 9090:9090 bootjsp:latest
                 '''
             }
         }
